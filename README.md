@@ -5,11 +5,12 @@
 1. Run `npm install ao-design-tokens`
 2. In your project CSS, import the following:
 ```
-@import "ao-design-tokens/tokens.css"
+@import "ao-design-tokens/css/index.css";
 
 body {
-    color: var(--color-primary);
-    background: var(--component-base);
+    color: var(--color-inverse);
+    background: var(--blue-9);
+    padding: var(--size-5);
 }
 
 ```
