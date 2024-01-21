@@ -1,6 +1,6 @@
 {
   "name": "ao-design-tokens",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Common CSS reset and variables",
   "main": "css/index.css",
   "scripts": {
