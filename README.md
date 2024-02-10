@@ -5,7 +5,7 @@
 1. Run `npm install ao-design-tokens`
 2. In your project CSS, import the following:
 ```
-@import "ao-design-tokens/css/index.css";
+@import "ao-design-tokens";
 
 body {
     color: var(--color-inverse);
