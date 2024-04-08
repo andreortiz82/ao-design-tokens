@@ -1,0 +1,122 @@
+{
+  "id": "VariableCollectionId:425:1150",
+  "name": "Typography",
+  "modes": { "425:4": "Mode 1" },
+  "variableIds": [
+    "VariableID:425:1156",
+    "VariableID:425:1157",
+    "VariableID:425:1158",
+    "VariableID:425:1154",
+    "VariableID:425:1155",
+    "VariableID:425:1151",
+    "VariableID:425:1153"
+  ],
+  "variables": [
+    {
+      "id": "VariableID:425:1151",
+      "name": "Weight/normal",
+      "description": "",
+      "type": "STRING",
+      "valuesByMode": { "425:4": "400" },
+      "resolvedValuesByMode": {
+        "425:4": { "resolvedValue": "400", "alias": null }
+      },
+      "scopes": ["ALL_SCOPES"],
+      "hiddenFromPublishing": false,
+      "codeSyntax": {}
+    },
+    {
+      "id": "VariableID:425:1153",
+      "name": "Weight/bold",
+      "description": "",
+      "type": "STRING",
+      "valuesByMode": { "425:4": "700" },
+      "resolvedValuesByMode": {
+        "425:4": { "resolvedValue": "700", "alias": null }
+      },
+      "scopes": ["ALL_SCOPES"],
+      "hiddenFromPublishing": false,
+      "codeSyntax": {}
+    },
+    {
+      "id": "VariableID:425:1154",
+      "name": "Line Height/body",
+      "description": "",
+      "type": "STRING",
+      "valuesByMode": { "425:4": "1.5" },
+      "resolvedValuesByMode": {
+        "425:4": { "resolvedValue": "1.5", "alias": null }
+      },
+      "scopes": ["ALL_SCOPES"],
+      "hiddenFromPublishing": false,
+      "codeSyntax": {}
+    },
+    {
+      "id": "VariableID:425:1155",
+      "name": "Line Height/heading",
+      "description": "",
+      "type": "STRING",
+      "valuesByMode": { "425:4": "1.5" },
+      "resolvedValuesByMode": {
+        "425:4": { "resolvedValue": "1.5", "alias": null }
+      },
+      "scopes": ["ALL_SCOPES"],
+      "hiddenFromPublishing": false,
+      "codeSyntax": {}
+    },
+    {
+      "id": "VariableID:425:1156",
+      "name": "Family/sans",
+      "description": "",
+      "type": "STRING",
+      "valuesByMode": {
+        "425:4": "Inter, system-ui, Avenir, Helvetica, Arial, sans-serif"
+      },
+      "resolvedValuesByMode": {
+        "425:4": {
+          "resolvedValue": "Inter, system-ui, Avenir, Helvetica, Arial, sans-serif",
+          "alias": null
+        }
+      },
+      "scopes": ["ALL_SCOPES"],
+      "hiddenFromPublishing": false,
+      "codeSyntax": {}
+    },
+    {
+      "id": "VariableID:425:1157",
+      "name": "Family/serif",
+      "description": "",
+      "type": "STRING",
+      "valuesByMode": {
+        "425:4": "Georgia, Cambria, Times New Roman, Times, serif"
+      },
+      "resolvedValuesByMode": {
+        "425:4": {
+          "resolvedValue": "Georgia, Cambria, Times New Roman, Times, serif",
+          "alias": null
+        }
+      },
+      "scopes": ["ALL_SCOPES"],
+      "hiddenFromPublishing": false,
+      "codeSyntax": {}
+    },
+    {
+      "id": "VariableID:425:1158",
+      "name": "Family/code",
+      "description": "",
+      "type": "STRING",
+      "valuesByMode": {
+        "425:4": "Menlo, Monaco, Consolas, Liberation Mono, Courier New,     monospace"
+      },
+      "resolvedValuesByMode": {
+        "425:4": {
+          "resolvedValue": "Menlo, Monaco, Consolas, Liberation Mono, Courier New,     monospace",
+          "alias": null
+        }
+      },
+      "scopes": ["ALL_SCOPES"],
+      "hiddenFromPublishing": false,
+      "codeSyntax": {}
+    }
+  ]
+}

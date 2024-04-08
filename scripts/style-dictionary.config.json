@@ -1,0 +1,15 @@
+{
+  "source": ["./tokendata/**/*.json"],
+  "platforms": {
+    "web": {
+      "transformGroup": "custom/group",
+      "buildPath": "./dist/",
+      "files": [
+        {
+          "destination": "tokens.css",
+          "format": "custom/css/theme"
+        }
+      ]
+    }
+  }
+}
