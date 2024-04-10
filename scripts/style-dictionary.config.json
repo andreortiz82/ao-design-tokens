@@ -8,6 +8,10 @@
         {
           "destination": "tokens.css",
           "format": "custom/css/theme"
+        },
+        {
+          "destination": "tokens.js",
+          "format": "custom/js"
         }
       ]
     }
