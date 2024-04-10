@@ -1,0 +1,57 @@
+@import url("./reset.css");
+@import url("./tokens.css");
+
+html,
+body {
+  font-family: var(--typography-family-sans);
+  font-size: 16px;
+  line-height: var(--typography-line-height-body);
+  color: var(--color-primary);
+  padding: var(--size-base-8);
+  background: var(--component-base);
+}
+
+.TokenTable {
+  & h2 {
+    margin-bottom: var(--size-base-5);
+  }
+
+  & table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid var(--component-border);
+
+    & tbody {
+      height: 100px;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+
+    & th,
+    & td {
+      text-align: left;
+      padding: var(--size-base-2);
+      border: 1px solid var(--component-border);
+    }
+    & th {
+      background: var(--component-background-secondary);
+    }
+
+    & td {
+      font-family: var(--typography-family-code);
+    }
+  }
+}
+
+.foundation-swatch {
+  display: flex;
+  align-items: center;
+
+  & .swatch {
+    width: var(--size-base-5);
+    height: var(--size-base-5);
+    margin-right: var(--size-base-5);
+    border-radius: var(--size-border-radius-pill);
+  }
+}

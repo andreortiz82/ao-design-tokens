@@ -1,9 +1,19 @@
 {
   "source": ["./tokendata/**/*.json"],
   "platforms": {
-    "web": {
+    "tokenlib": {
       "transformGroup": "custom/group",
       "buildPath": "./dist/",
+      "files": [
+        {
+          "destination": "tokens.css",
+          "format": "custom/css/theme"
+        }
+      ]
+    },
+    "documentation": {
+      "transformGroup": "custom/group",
+      "buildPath": "./docs/",
       "files": [
         {
           "destination": "tokens.css",

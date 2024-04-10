@@ -181,7 +181,7 @@ StyleDictionary.registerFormat({
 
     let output = collections
       .map((c) => {
-        return `export const ${_.camelCase(c)} = {
+        return `window.${_.camelCase(c)} = {
       ${dictionary.allTokens
         .filter((tkn) => {
           return tkn.collection === c;
