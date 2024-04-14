@@ -819,6 +819,39 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }}@media (prefers-color-scheme: dark) {
  :root {
       
@@ -1549,6 +1582,39 @@
 --base-white:rgba(255, 255, 255, 1);
 --base-brand:rgba(255, 255, 255, 1);
 --base-component-base:rgba(17, 24, 28, 1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2372,6 +2438,7 @@
 --fx-shadow-sm:0 1px 2px 0 rgba(0, 0, 0, 0.05);
 --fx-shadow-md:0 4px 6px -1px rgba(0, 0, 0, 0.1),     0 2px 4px -1px rgba(0, 0, 0, 0.06);
 --fx-shadow-lg:0 10px 15px -3px rgba(0, 0, 0, 0.1),     0 4px 6px -2px rgba(0, 0, 0, 0.05);
+--fx-focus-default:0px 0px 0px 4px rgba(0, 145, 255, 0.25);;
 --color-primary:var(--grays-slate-12);
 --color-secondary:var(--grays-slate-11);
 --color-tertiary:var(--grays-slate-10);
@@ -2387,10 +2454,10 @@
 --color-info:var(--colors-cyan-9);
 --color-link:var(--colors-blue-9);
 --color-link-hover:var(--colors-blue-10);
---component-base:var(--grays-slate-1);
+--component-base:var(--base-component-base);
 --component-base-inverse:var(--grays-slate-12);
---component-background:var(--grays-slate-1);
---component-background-secondary:var(--grays-slate-2);
+--component-background:var(--base-component-base);
+--component-background-secondary:var(--grays-slate-3);
 --component-border:var(--grays-slate-7);
 --component-border-secondary:var(--grays-slate-6);
 --component-disabled:var(--grays-slate-6);
@@ -2398,6 +2465,7 @@
 --component-hover-border:var(--grays-slate-11);
 --component-focus-border:var(--colors-blue-9);
 --component-background-active:var(--grays-slate-4);
+--component-background-tertiary:var(--grays-slate-5);
 --size-border-radius-0:0;
 --size-border-radius-1:2px;
 --size-border-radius-2:3px;
@@ -2453,6 +2521,37 @@
 --size-font-h-3:2rem;
 --size-font-h-2:2.5rem;
 --size-font-h-1:3rem;
+--size-ui-0:0;
+--size-ui-1:2;
+--size-ui-2:4;
+--size-ui-3:6;
+--size-ui-4:8;
+--size-ui-5:12;
+--size-ui-6:16;
+--size-ui-7:20;
+--size-ui-8:24;
+--size-ui-9:32;
+--size-ui-10:40;
+--size-ui-11:48;
+--size-ui-12:56;
+--size-ui-13:64;
+--size-ui-14:72;
+--size-ui-15:80;
+--size-ui-16:88;
+--size-ui-17:96;
+--size-ui-18:104;
+--size-ui-19:120;
+--size-ui-20:140;
+--size-ui-21:180;
+--size-ui-22:200;
+--size-ui-23:240;
+--size-ui-24:260;
+--size-ui-25:280;
+--size-ui-26:300;
+--size-ui-27:320;
+--size-ui-28:360;
+--size-ui-29:380;
+--size-ui-30:400;
 --typography-weight-normal:400;
 --typography-weight-bold:700;
 --typography-line-height-body:1.5;

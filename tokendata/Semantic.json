@@ -22,6 +22,7 @@
     "VariableID:425:1079",
     "VariableID:425:1080",
     "VariableID:425:1081",
+    "VariableID:495:434",
     "VariableID:425:1082",
     "VariableID:425:1083",
     "VariableID:425:1084",
@@ -387,18 +388,13 @@
       "description": "",
       "type": "COLOR",
       "valuesByMode": {
-        "425:0": { "type": "VARIABLE_ALIAS", "id": "VariableID:425:487" }
+        "425:0": { "type": "VARIABLE_ALIAS", "id": "VariableID:437:3" }
       },
       "resolvedValuesByMode": {
         "425:0": {
-          "resolvedValue": {
-            "r": 0.9843137264251709,
-            "g": 0.9882352948188782,
-            "b": 0.9921568632125854,
-            "a": 1
-          },
-          "alias": "VariableID:425:487",
-          "aliasName": "Grays/Slate/1"
+          "resolvedValue": { "r": 1, "g": 1, "b": 1, "a": 1 },
+          "alias": "VariableID:437:3",
+          "aliasName": "Base/component-base"
         }
       },
       "scopes": ["ALL_SCOPES"],
@@ -435,18 +431,13 @@
       "description": "",
       "type": "COLOR",
       "valuesByMode": {
-        "425:0": { "type": "VARIABLE_ALIAS", "id": "VariableID:425:487" }
+        "425:0": { "type": "VARIABLE_ALIAS", "id": "VariableID:437:3" }
       },
       "resolvedValuesByMode": {
         "425:0": {
-          "resolvedValue": {
-            "r": 0.9843137264251709,
-            "g": 0.9882352948188782,
-            "b": 0.9921568632125854,
-            "a": 1
-          },
-          "alias": "VariableID:425:487",
-          "aliasName": "Grays/Slate/1"
+          "resolvedValue": { "r": 1, "g": 1, "b": 1, "a": 1 },
+          "alias": "VariableID:437:3",
+          "aliasName": "Base/component-base"
         }
       },
       "scopes": ["ALL_SCOPES"],
@@ -459,18 +450,18 @@
       "description": "",
       "type": "COLOR",
       "valuesByMode": {
-        "425:0": { "type": "VARIABLE_ALIAS", "id": "VariableID:425:488" }
+        "425:0": { "type": "VARIABLE_ALIAS", "id": "VariableID:425:489" }
       },
       "resolvedValuesByMode": {
         "425:0": {
           "resolvedValue": {
-            "r": 0.9725490212440491,
-            "g": 0.9764705896377563,
-            "b": 0.9803921580314636,
+            "r": 0.9450980424880981,
+            "g": 0.9529411792755127,
+            "b": 0.9607843160629272,
             "a": 1
           },
-          "alias": "VariableID:425:488",
-          "aliasName": "Grays/Slate/2"
+          "alias": "VariableID:425:489",
+          "aliasName": "Grays/Slate/3"
         }
       },
       "scopes": ["ALL_SCOPES"],
@@ -634,6 +625,30 @@
           },
           "alias": "VariableID:425:490",
           "aliasName": "Grays/Slate/4"
+        }
+      },
+      "scopes": ["ALL_SCOPES"],
+      "hiddenFromPublishing": false,
+      "codeSyntax": {}
+    },
+    {
+      "id": "VariableID:495:434",
+      "name": "Component/background-tertiary",
+      "description": "",
+      "type": "COLOR",
+      "valuesByMode": {
+        "425:0": { "type": "VARIABLE_ALIAS", "id": "VariableID:425:491" }
+      },
+      "resolvedValuesByMode": {
+        "425:0": {
+          "resolvedValue": {
+            "r": 0.9019607901573181,
+            "g": 0.9098039269447327,
+            "b": 0.9215686321258545,
+            "a": 1
+          },
+          "alias": "VariableID:425:491",
+          "aliasName": "Grays/Slate/5"
         }
       },
       "scopes": ["ALL_SCOPES"],

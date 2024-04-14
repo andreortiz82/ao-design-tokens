@@ -3,6 +3,7 @@
   "name": "Fx",
   "modes": { "425:5": "Mode 1" },
   "variableIds": [
+    "VariableID:495:444",
     "VariableID:425:1160",
     "VariableID:425:1161",
     "VariableID:425:1162"
@@ -53,6 +54,22 @@
       "resolvedValuesByMode": {
         "425:5": {
           "resolvedValue": "0 10px 15px -3px rgba(0, 0, 0, 0.1),     0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+          "alias": null
+        }
+      },
+      "scopes": ["ALL_SCOPES"],
+      "hiddenFromPublishing": false,
+      "codeSyntax": {}
+    },
+    {
+      "id": "VariableID:495:444",
+      "name": "Focus/default",
+      "description": "",
+      "type": "STRING",
+      "valuesByMode": { "425:5": "0px 0px 0px 4px rgba(0, 145, 255, 0.25);" },
+      "resolvedValuesByMode": {
+        "425:5": {
+          "resolvedValue": "0px 0px 0px 4px rgba(0, 145, 255, 0.25);",
           "alias": null
         }
       },
