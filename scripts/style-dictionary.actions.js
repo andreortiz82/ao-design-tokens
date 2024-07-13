@@ -208,5 +208,38 @@ StyleDictionary.registerFormat({
   },
 });
 
+StyleDictionary.registerFormat({
+  name: "custom/tailwind",
+  formatter: function ({ dictionary, file, options }) {
+    let theme = {};
+
+    dictionary.allTokens.forEach((token) => {
+      if (token.collection !== "semantic") {
+        return; // Skip non-semantic tokens
+      }
+
+      const collectionName = _.camelCase(token.collection);
+      const tokenName = token.name
+        .replace("foundation-", "")
+        .replace("semantic-", "")
+        .replace("mode-1-", "");
+
+      if (!theme[collectionName]) {
+        theme[collectionName] = {};
+      }
+
+      theme[collectionName][tokenName] = token.value;
+    });
+
+    return `export default {
+            content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+            theme: {
+              extend: ${JSON.stringify(theme, null, 2)},
+            },
+            plugins: [],
+          };`;
+  },
+});
+
 const StyleDictionaryExtended = StyleDictionary.extend(baseConfig);
 StyleDictionaryExtended.buildAllPlatforms();

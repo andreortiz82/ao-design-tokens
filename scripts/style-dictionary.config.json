@@ -8,6 +8,10 @@
         {
           "destination": "tokens.css",
           "format": "custom/css/theme"
+        },
+        {
+          "destination": "tailwind.custom.js",
+          "format": "custom/tailwind"
         }
       ]
     },
@@ -22,6 +26,10 @@
         {
           "destination": "tokens.js",
           "format": "custom/js"
+        },
+        {
+          "destination": "tailwind.custom.js",
+          "format": "custom/tailwind"
         }
       ]
     }
