@@ -9,7 +9,8 @@
     "build": "node ./scripts/style-dictionary.actions.js"
   },
   "exports": {
-    ".": "./dist/index.css"
+    ".": "./dist/index.css",
+    "./tailwind": "./dist/tailwind.custom.js"
   },
   "keywords": [],
   "author": "",
