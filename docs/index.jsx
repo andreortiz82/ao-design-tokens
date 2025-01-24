@@ -53,37 +53,7 @@ const TokenTable = (props) => {
 };
 
 const Gallery = () => {
-  return (
-    <section className="Gallery">
-      <TokenTable
-        title="Semantic"
-        data={window.semantic}
-        type="semantic"
-        hash="semantic"
-      />
-      <TokenTable
-        title="Foundation Light"
-        data={filterByMode(window.foundation, "light-")}
-        type="foundation"
-        hash="light"
-      />
-      <TokenTable
-        title="Foundation Dark"
-        data={filterByMode(window.foundation, "dark-")}
-        type="foundation"
-        hash="dark"
-      />
-
-      <TokenTable title="Size" data={window.size} type="size" hash="size" />
-      <TokenTable
-        title="Typography"
-        data={window.typography}
-        type="typography"
-        hash="typography"
-      />
-      <TokenTable title="FX" data={window.fx} type="fx" hash="fx" />
-    </section>
-  );
+  return <section className="Gallery">Gallery HERE</section>;
 };
 
 // Render the component to the DOM
