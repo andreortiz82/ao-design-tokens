@@ -17,7 +17,7 @@
     },
     "documentation": {
       "transformGroup": "custom/group",
-      "buildPath": "./docs/",
+      "buildPath": "./src/assets/",
       "files": [
         {
           "destination": "tokens.css",

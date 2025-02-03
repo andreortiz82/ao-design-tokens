@@ -1,27 +1,8 @@
-# AO Design Tokens
+# React + Vite
 
-## Get started
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-1. Run `npm install ao-design-tokens`
-2. In your project CSS, import the following:
+Currently, two official plugins are available:
 
-```
-@import "ao-design-tokens";
-
-body {
-    color: var(--color-primary);
-    background: var(--component-base);
-    padding: var(--size-base-5);
-}
-
-```
-
-3. That's it!
-
-### CSS Reset
-
-Includes the [EM CSS Reset](https://meyerweb.com/eric/tools/css/reset/).
-
-### Colors
-
-This project contains CSS variables sourced from the [Radix UI System Colors](https://www.radix-ui.com/colors). Not all colors are included. Supports **light and dark modes**.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

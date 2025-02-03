@@ -140,13 +140,56 @@ StyleDictionary.registerFormat({
   },
 });
 
+// StyleDictionary.registerFormat({
+//   name: "custom/js",
+//   formatter: function ({ dictionary, file, options }) {
+//     let collections = [];
+//     dictionary.allTokens.map((token) => {
+//       if (!collections.includes(token.collection)) {
+//         collections.push(token.collection);
+//       }
+//     });
+
+//     let output = collections
+//       .map((c) => {
+//         return `export const ${_.camelCase(c)} = {
+//       ${dictionary.allTokens
+//         .filter((tkn) => {
+//           return tkn.collection === c;
+//         })
+//         .map((token) => {
+//           let value = token.value;
+//           let tname = token.name
+//             .replace("foundation-", "")
+//             .replace("semantic-", "")
+//             .replace("mode-1-", "");
+//           let tmode = token.mode;
+
+//           if (token.collection === "foundation") {
+//             if (tmode === "light") {
+//               return `light: {"${tname}" : "${value}"}`;
+//             }
+//             if (tmode === "dark") {
+//               return `dark: {"${tname}" : "${value}"}`;
+//             }
+//           }
+
+//           return `"${tname}" : "${value}"`;
+//         })
+//         .join(",")}
+//     }\n`;
+//       })
+//       .join("");
+
+//     return `${output}`;
+//   },
+// });
+
 StyleDictionary.registerFormat({
   name: "custom/js",
   formatter: function ({ dictionary, file, options }) {
     let collections = [];
-
     dictionary.allTokens.map((token) => {
-      const collectionName = _.camelCase(token.collection);
       if (!collections.includes(token.collection)) {
         collections.push(token.collection);
       }
@@ -154,61 +197,59 @@ StyleDictionary.registerFormat({
 
     let output = collections
       .map((c) => {
-        return `window.${_.camelCase(c)} = {
-      ${dictionary.allTokens
-        .filter((tkn) => {
-          return tkn.collection === c;
-        })
-        .map((token) => {
-          let value = token.value;
-          let tname = token.name
-            .replace("foundation-", "")
-            .replace("semantic-", "")
-            .replace("mode-1-", "");
+        if (c === "foundation") {
+          const foundationLight = dictionary.allTokens.filter(
+            (t) => t.collection === c && t.mode === "light"
+          );
+          const foundationDark = dictionary.allTokens.filter(
+            (t) => t.collection === c && t.mode === "dark"
+          );
 
-          if (token.collection === "keyframes") {
-            value = unescape(token.value);
-          }
+          return `export const foundation = {
+            light: {
+              ${foundationLight
+                .map((token) => {
+                  let tname = token.name
+                    .replace("foundation-", "")
+                    .replace("light-", "");
+                  return `"${tname}": "${token.value}"`;
+                })
+                .join(",\n")}
+            },
+            dark: {
+              ${foundationDark
+                .map((token) => {
+                  let tname = token.name
+                    .replace("foundation-", "")
+                    .replace("dark-", "");
+                  return `"${tname}": "${token.value}"`;
+                })
+                .join(",\n")}
+            }
+          }\n`;
+        }
 
-          return `"${tname}" : "${value}"`;
-        })
-        .join(",")}
-    }\n`;
+        return `export const ${_.camelCase(c)} = {
+          ${dictionary.allTokens
+            .filter((t) => {
+              return t.collection === c;
+            })
+            .map((token) => {
+              let value = token.value;
+              let tname = token.name
+                .replace("foundation-", "")
+                .replace("semantic-", "")
+                .replace("mode-1-", "");
+              return `"${tname}": "${value}"`;
+            })
+            .join(",")}
+        }\n`;
       })
       .join("");
 
     return `${output}`;
   },
 });
-
-// StyleDictionary.registerFormat({
-//   name: "custom/tailwind",
-//   formatter: function ({ dictionary, file, options }) {
-//     let theme = {};
-
-//     dictionary.allTokens.forEach((token) => {
-//       const collectionName = _.camelCase(token.collection);
-//       const tokenName = token.name.replace(
-//         /foundation-|semantic-|typography-|size-|effects-|mode-1-/g,
-//         ""
-//       );
-
-//       if (!theme[collectionName]) {
-//         theme[collectionName] = {};
-//       }
-
-//       theme[collectionName][tokenName] = token.value;
-//     });
-
-//     return `export default {
-//             content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
-//             theme: {
-//               extend: ${JSON.stringify(theme, null, 2)},
-//             },
-//             plugins: [],
-//           };`;
-//   },
-// });
 
 StyleDictionary.registerFormat({
   name: "custom/tailwind",
