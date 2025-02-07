@@ -68,8 +68,6 @@ const TokenTable = (props) => {
   );
 };
 
-// create a toast component
-
 function App() {
   return (
     <main className="w-3/4 m-auto">
