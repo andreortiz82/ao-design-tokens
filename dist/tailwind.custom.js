@@ -3309,7 +3309,7 @@ const colors = {
   "ao-text-tertiary": "var(--slate-10)",
   "ao-text-info": "var(--cyan-9)",
   "ao-text-success": "var(--green-9)",
-  "ao-text-warning": "var(--bright-amber-9)",
+  "ao-text-warning": "var(--amber-9)",
   "ao-text-danger": "var(--red-9)",
   "ao-text-link": "var(--blue-9)",
   "ao-text-invert": "var(--white-12)",
@@ -3317,7 +3317,8 @@ const colors = {
   "ao-border-focus": "var(--blue-9)",
   "ao-border-active": "var(--blue-9)",
   "ao-border-disabled": "var(--slate-5)",
-  "ao-text-placeholder": "var(--slate-8)"
+  "ao-text-placeholder": "var(--slate-8)",
+  "ao-primary": "var(--slate-12)"
 };
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],

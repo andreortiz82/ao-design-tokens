@@ -1543,6 +1543,7 @@
 
 
 
+
     }}@media (prefers-color-scheme: dark) {
  :root {
       
@@ -2941,6 +2942,7 @@
 --white-10:rgba(255, 255, 255, 0.44600000977516174);
 --white-11:rgba(255, 255, 255, 0.5920000076293945);
 --white-12:rgba(255, 255, 255, 0.9229999780654907);
+
 
 
 
@@ -4497,7 +4499,7 @@
 --component-text-tertiary:var(--slate-10);
 --component-text-info:var(--cyan-9);
 --component-text-success:var(--green-9);
---component-text-warning:var(--bright-amber-9);
+--component-text-warning:var(--amber-9);
 --component-text-danger:var(--red-9);
 --component-text-link:var(--blue-9);
 --component-text-invert:var(--white-12);
@@ -4506,6 +4508,7 @@
 --component-border-active:var(--blue-9);
 --component-border-disabled:var(--slate-5);
 --component-text-placeholder:var(--slate-8);
+--component-primary:var(--slate-12);
 --size-8:20px;
 --size-7:16px;
 --size-6:12px;
