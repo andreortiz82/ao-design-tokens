@@ -1,8 +1,26 @@
-# React + Vite
+# AO Design Tokens
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Custom design tokens for your project. Design Token Gallery is [here](https://andreortiz82.github.io/ao-design-tokens/).
 
-Currently, two official plugins are available:
+## Install
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+`npm install ao-design-tokens`
+
+## Usage
+
+In your CSS file, import the token CSS:
+
+```css
+@import "ao-design-tokens";
+
+.my-custom-style {
+  background: var(--component-base);
+  color: var(--component-text-default);
+}
+```
+
+This project uses:
+
+- [Radix UI Colors](https://www.radix-ui.com/colors)
+- [Style Dictionary](https://styledictionary.com/)
+- [Export/Import Variables Figma Plugin](https://www.figma.com/community/plugin/1256972111705530093)
