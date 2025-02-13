@@ -1,13 +1,14 @@
 {
   "name": "ao-design-tokens",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "Common CSS reset and variables",
   "author": "Andre Ortiz",
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "node ./scripts/style-dictionary.actions.js && vite build",
+    "build": "node ./scripts/style-dictionary.actions.js && vite build && npm run pretty",
     "lint": "eslint .",
+    "pretty": "prettier --write '**/*.{ts,js,css,html,json,md}'",
     "preview": "vite preview"
   },
   "exports": {
@@ -16,6 +17,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.3",
+    "prettier": "^3.5.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "style-dictionary": "^3.9.2",

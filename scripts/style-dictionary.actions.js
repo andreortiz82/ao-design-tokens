@@ -29,7 +29,7 @@ function toStyleDictionaryFormat(inputJson, filePath) {
     variables.map((variable) => {
       const modeName = _.kebabCase(modes[mode]);
       const newVarName = _.kebabCase(
-        `${collection}-${modeName}-${variable.name}`
+        `${collection}-${modeName}-${variable.name}`,
       );
 
       styleDictionary[newVarName] = {
@@ -199,10 +199,10 @@ StyleDictionary.registerFormat({
       .map((c) => {
         if (c === "foundation") {
           const foundationLight = dictionary.allTokens.filter(
-            (t) => t.collection === c && t.mode === "light"
+            (t) => t.collection === c && t.mode === "light",
           );
           const foundationDark = dictionary.allTokens.filter(
-            (t) => t.collection === c && t.mode === "dark"
+            (t) => t.collection === c && t.mode === "dark",
           );
 
           return `export const foundation = {

@@ -1,1 +1,81 @@
-{"id":"VariableCollectionId:14:183","name":"Effects","modes":{"14:1":"Mode 1"},"variableIds":["VariableID:14:192","VariableID:14:191","VariableID:14:190","VariableID:14:189"],"variables":[{"id":"VariableID:14:189","name":"Shadow/lg","description":"","type":"STRING","valuesByMode":{"14:1":"0 10px 15px -3px rgba(0, 0, 0, 0.1),     0 4px 6px -2px rgba(0, 0, 0, 0.05)"},"resolvedValuesByMode":{"14:1":{"resolvedValue":"0 10px 15px -3px rgba(0, 0, 0, 0.1),     0 4px 6px -2px rgba(0, 0, 0, 0.05)","alias":null}},"scopes":["ALL_SCOPES"],"hiddenFromPublishing":true,"codeSyntax":{}},{"id":"VariableID:14:190","name":"Shadow/md","description":"","type":"STRING","valuesByMode":{"14:1":"0 4px 6px -1px rgba(0, 0, 0, 0.1),     0 2px 4px -1px rgba(0, 0, 0, 0.06)"},"resolvedValuesByMode":{"14:1":{"resolvedValue":"0 4px 6px -1px rgba(0, 0, 0, 0.1),     0 2px 4px -1px rgba(0, 0, 0, 0.06)","alias":null}},"scopes":["ALL_SCOPES"],"hiddenFromPublishing":true,"codeSyntax":{}},{"id":"VariableID:14:191","name":"Shadow/sm","description":"","type":"STRING","valuesByMode":{"14:1":"0 1px 2px 0 rgba(0, 0, 0, 0.05)"},"resolvedValuesByMode":{"14:1":{"resolvedValue":"0 1px 2px 0 rgba(0, 0, 0, 0.05)","alias":null}},"scopes":["ALL_SCOPES"],"hiddenFromPublishing":true,"codeSyntax":{}},{"id":"VariableID:14:192","name":"Shadow/focus","description":"","type":"STRING","valuesByMode":{"14:1":"0px 0px 0px 4px rgba(0, 145, 255, 0.25);"},"resolvedValuesByMode":{"14:1":{"resolvedValue":"0px 0px 0px 4px rgba(0, 145, 255, 0.25);","alias":null}},"scopes":["ALL_SCOPES"],"hiddenFromPublishing":true,"codeSyntax":{}}]}
+{
+  "id": "VariableCollectionId:14:183",
+  "name": "Effects",
+  "modes": { "14:1": "Mode 1" },
+  "variableIds": [
+    "VariableID:14:192",
+    "VariableID:14:191",
+    "VariableID:14:190",
+    "VariableID:14:189"
+  ],
+  "variables": [
+    {
+      "id": "VariableID:14:189",
+      "name": "Shadow/lg",
+      "description": "",
+      "type": "STRING",
+      "valuesByMode": {
+        "14:1": "0 10px 15px -3px rgba(0, 0, 0, 0.1),     0 4px 6px -2px rgba(0, 0, 0, 0.05)"
+      },
+      "resolvedValuesByMode": {
+        "14:1": {
+          "resolvedValue": "0 10px 15px -3px rgba(0, 0, 0, 0.1),     0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+          "alias": null
+        }
+      },
+      "scopes": ["ALL_SCOPES"],
+      "hiddenFromPublishing": true,
+      "codeSyntax": {}
+    },
+    {
+      "id": "VariableID:14:190",
+      "name": "Shadow/md",
+      "description": "",
+      "type": "STRING",
+      "valuesByMode": {
+        "14:1": "0 4px 6px -1px rgba(0, 0, 0, 0.1),     0 2px 4px -1px rgba(0, 0, 0, 0.06)"
+      },
+      "resolvedValuesByMode": {
+        "14:1": {
+          "resolvedValue": "0 4px 6px -1px rgba(0, 0, 0, 0.1),     0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+          "alias": null
+        }
+      },
+      "scopes": ["ALL_SCOPES"],
+      "hiddenFromPublishing": true,
+      "codeSyntax": {}
+    },
+    {
+      "id": "VariableID:14:191",
+      "name": "Shadow/sm",
+      "description": "",
+      "type": "STRING",
+      "valuesByMode": { "14:1": "0 1px 2px 0 rgba(0, 0, 0, 0.05)" },
+      "resolvedValuesByMode": {
+        "14:1": {
+          "resolvedValue": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+          "alias": null
+        }
+      },
+      "scopes": ["ALL_SCOPES"],
+      "hiddenFromPublishing": true,
+      "codeSyntax": {}
+    },
+    {
+      "id": "VariableID:14:192",
+      "name": "Shadow/focus",
+      "description": "",
+      "type": "STRING",
+      "valuesByMode": { "14:1": "0px 0px 0px 4px rgba(0, 145, 255, 0.25);" },
+      "resolvedValuesByMode": {
+        "14:1": {
+          "resolvedValue": "0px 0px 0px 4px rgba(0, 145, 255, 0.25);",
+          "alias": null
+        }
+      },
+      "scopes": ["ALL_SCOPES"],
+      "hiddenFromPublishing": true,
+      "codeSyntax": {}
+    }
+  ]
+}
