@@ -1,2 +1,37 @@
 @import url("./assets/tokens.css");
 @import "tailwindcss";
+
+@theme {
+  --color-default: var(--slate-7);
+  --color-base: var(--gray-1);
+  --color-secondary: var(--slate-6);
+  --color-base-subtle: var(--slate-2);
+  --color-disabled: var(--slate-5);
+  --color-component-text-disabled: var(--slate-8);
+  --color-active: var(--slate-4);
+  --color-component-text-default: var(--slate-12);
+  --color-component-text-secondary: var(--slate-11);
+  --color-component-text-tertiary: var(--slate-10);
+  --color-info: var(--cyan-9);
+  --color-success: var(--green-9);
+  --color-warning: var(--amber-9);
+  --color-danger: var(--red-9);
+  --color-link: var(--blue-9);
+  --color-invert: var(--gray-1);
+  --color-tertiary: var(--slate-5);
+  --color-focus: var(--blue-9);
+  --color-component-border-active: var(--blue-9);
+  --color-component-border-disabled: var(--slate-5);
+  --color-placeholder: var(--slate-8);
+  --color-primary: var(--slate-12);
+  --color-component-border-focus: var(--blue-9);
+  --color-component-border-default: var(--slate-7);
+  --color-component-border-secondary: var(--slate-6);
+  --color-component-border-tertiary: var(--slate-5);
+  --color-component-raduis: var(--rounded-md);
+}
+
+body {
+  background: var(--base);
+  color: var(--color-component-text-default);
+}

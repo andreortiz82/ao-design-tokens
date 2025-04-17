@@ -140,51 +140,6 @@ StyleDictionary.registerFormat({
   },
 });
 
-// StyleDictionary.registerFormat({
-//   name: "custom/js",
-//   formatter: function ({ dictionary, file, options }) {
-//     let collections = [];
-//     dictionary.allTokens.map((token) => {
-//       if (!collections.includes(token.collection)) {
-//         collections.push(token.collection);
-//       }
-//     });
-
-//     let output = collections
-//       .map((c) => {
-//         return `export const ${_.camelCase(c)} = {
-//       ${dictionary.allTokens
-//         .filter((tkn) => {
-//           return tkn.collection === c;
-//         })
-//         .map((token) => {
-//           let value = token.value;
-//           let tname = token.name
-//             .replace("foundation-", "")
-//             .replace("semantic-", "")
-//             .replace("mode-1-", "");
-//           let tmode = token.mode;
-
-//           if (token.collection === "foundation") {
-//             if (tmode === "light") {
-//               return `light: {"${tname}" : "${value}"}`;
-//             }
-//             if (tmode === "dark") {
-//               return `dark: {"${tname}" : "${value}"}`;
-//             }
-//           }
-
-//           return `"${tname}" : "${value}"`;
-//         })
-//         .join(",")}
-//     }\n`;
-//       })
-//       .join("");
-
-//     return `${output}`;
-//   },
-// });
-
 StyleDictionary.registerFormat({
   name: "custom/js",
   formatter: function ({ dictionary, file, options }) {
@@ -248,62 +203,6 @@ StyleDictionary.registerFormat({
       .join("");
 
     return `${output}`;
-  },
-});
-
-StyleDictionary.registerFormat({
-  name: "custom/tailwind",
-  formatter: function ({ dictionary }) {
-    let colors = {};
-    const collections = [];
-
-    dictionary.allTokens.forEach((token) => {
-      if (!collections.includes(token.collection)) {
-        collections.push(token.collection);
-      }
-
-      if (token.collection === "foundation") {
-        const tokenName = token.name
-          .replace("foundation-", "")
-          .replace("light-", "")
-          .replace("dark-", "");
-        if (!colors[tokenName]) {
-          colors[tokenName] = {};
-        }
-
-        if (token.mode === "light") {
-          colors[tokenName].light = token.value;
-          colors[tokenName].DEFAULT = token.value;
-        }
-        if (token.mode === "dark") {
-          colors[tokenName].dark = token.value;
-        }
-
-        if (colors[tokenName].light === colors[tokenName].dark) {
-          colors[tokenName] = token.value;
-        }
-      }
-
-      if (token.collection === "semantic") {
-        const tokenName = token.name.replace("semantic-mode-1-component", "ao");
-        if (!colors[tokenName]) {
-          colors[tokenName] = {};
-        }
-        colors[tokenName] = token.value;
-      }
-    });
-
-    return `
-/** @type {import('tailwindcss').Config} */
-const colors = ${JSON.stringify(colors, null, 2)};
-export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
-  theme: {
-    colors: colors,
-  },
-  plugins: [],
-};
-`;
   },
 });
 

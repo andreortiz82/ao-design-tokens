@@ -1,6 +1,6 @@
 {
   "name": "ao-design-tokens",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "Common CSS reset and variables",
   "author": "Andre Ortiz",
   "license": "MIT",
@@ -13,7 +13,9 @@
   },
   "exports": {
     ".": "./dist/tokens.css",
-    "./tailwind": "./dist/tailwind.custom.js"
+    "./tailwind": "./dist/tailwind-theme.css",
+    "./tokens/js": "./dist/tokens.js",
+    "./tokens/css": "./dist/tokens.css"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.3",

@@ -34,13 +34,13 @@ const TokenTable = (props) => {
       <h2 className="text-3xl">{title}</h2>
       <table className="table-auto w-full">
         <thead className="text-left">
-          <th className="p-2 bg-slate-200">Token</th>
-          <th className="p-2 bg-slate-200">Value</th>
+          <th className="p-2 bg-base">Token</th>
+          <th className="p-2 bg-base">Value</th>
         </thead>
         <tbody>
           {Object.keys(data).map((key) => {
             return (
-              <tr key={key} className="even:bg-slate-100">
+              <tr key={key} className="even:bg-secondary">
                 <td
                   onClick={() => copyToken(`var(--${key})`)}
                   className="p-2 font-mono cursor-pointer hover:underline"
@@ -99,12 +99,12 @@ export const Logo = ({ alt }) => {
 function App() {
   return (
     <main className="w-3/4 m-auto">
-      <header className="sticky top-0 pb-8 pt-4 bg-white/90 flex justify-between items-center">
+      <header className="sticky top-0 bg-base pb-8 pt-4 flex justify-between items-center">
         <a href="/ao-design-tokens/">
           <Logo alt={`AO Design Tokens`} />
         </a>
         <nav className="flex gap-6">
-          <span className="text-slate-500">Token Groups</span>
+          <span className="opacity-50">Token Groups</span>
           <a className="font-bold" href="#light">
             Foundation Light
           </a>

@@ -3,10 +3,10 @@
   "name": "Effects",
   "modes": { "14:1": "Mode 1" },
   "variableIds": [
-    "VariableID:14:192",
-    "VariableID:14:191",
+    "VariableID:14:189",
     "VariableID:14:190",
-    "VariableID:14:189"
+    "VariableID:14:191",
+    "VariableID:14:192"
   ],
   "variables": [
     {

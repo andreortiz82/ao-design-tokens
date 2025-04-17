@@ -45,30 +45,31 @@
     "VariableID:11:203",
     "VariableID:11:201",
     "VariableID:11:200",
-    "VariableID:11:221",
     "VariableID:11:247",
-    "VariableID:11:212",
-    "VariableID:11:202",
-    "VariableID:11:197",
-    "VariableID:11:196",
-    "VariableID:11:245",
-    "VariableID:11:194",
+    "VariableID:11:221",
+    "VariableID:214:1782",
     "VariableID:11:228",
+    "VariableID:11:196",
+    "VariableID:11:194",
+    "VariableID:11:197",
     "VariableID:11:240",
     "VariableID:11:241",
     "VariableID:11:244",
-    "VariableID:11:199",
+    "VariableID:11:245",
+    "VariableID:11:202",
+    "VariableID:11:212",
     "VariableID:11:195",
+    "VariableID:11:230",
     "VariableID:11:193",
     "VariableID:11:189",
+    "VariableID:11:199",
     "VariableID:11:191",
     "VariableID:11:188",
     "VariableID:11:190",
     "VariableID:11:187",
-    "VariableID:11:230",
+    "VariableID:11:232",
     "VariableID:11:198",
     "VariableID:11:192",
-    "VariableID:11:232",
     "VariableID:11:186",
     "VariableID:11:185"
   ],
@@ -79,13 +80,12 @@
       "description": "",
       "type": "STRING",
       "valuesByMode": {
-        "11:0": { "type": "VARIABLE_ALIAS", "id": "VariableID:10:5" }
+        "11:0": "Inter, system-ui, Avenir, Helvetica, Arial, sans-serif"
       },
       "resolvedValuesByMode": {
         "11:0": {
           "resolvedValue": "Inter, system-ui, Avenir, Helvetica, Arial, sans-serif",
-          "alias": "VariableID:10:5",
-          "aliasName": "Font/type/sans"
+          "alias": null
         }
       },
       "scopes": ["ALL_SCOPES"],
@@ -968,6 +968,19 @@
       },
       "scopes": ["ALL_SCOPES"],
       "hiddenFromPublishing": true,
+      "codeSyntax": {}
+    },
+    {
+      "id": "VariableID:214:1782",
+      "name": "Font/weight/medium",
+      "description": "",
+      "type": "STRING",
+      "valuesByMode": { "11:0": "500" },
+      "resolvedValuesByMode": {
+        "11:0": { "resolvedValue": "500", "alias": null }
+      },
+      "scopes": ["ALL_SCOPES"],
+      "hiddenFromPublishing": false,
       "codeSyntax": {}
     }
   ]
