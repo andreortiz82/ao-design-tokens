@@ -1,6 +1,6 @@
 {
   "name": "ao-design-tokens",
-  "version": "2.0.8",
+  "version": "2.0.10",
   "description": "Common CSS reset and variables",
   "author": "Andre Ortiz",
   "license": "MIT",
@@ -13,6 +13,8 @@
   },
   "exports": {
     ".": "./dist/tokens.css",
+    "./light": "./dist/light.css",
+    "./dark": "./dist/dark.css",
     "./js": "./dist/tokens.js"
   },
   "dependencies": {

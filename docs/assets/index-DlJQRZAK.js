@@ -10751,14 +10751,8 @@ const As = {
             R.jsxs("thead", {
               className: "text-left",
               children: [
-                R.jsx("th", {
-                  className: "p-2 bg-slate-200",
-                  children: "Token",
-                }),
-                R.jsx("th", {
-                  className: "p-2 bg-slate-200",
-                  children: "Value",
-                }),
+                R.jsx("th", { className: "p-2 bg-base", children: "Token" }),
+                R.jsx("th", { className: "p-2 bg-base", children: "Value" }),
               ],
             }),
             R.jsx("tbody", {
@@ -10766,7 +10760,7 @@ const As = {
                 R.jsxs(
                   "tr",
                   {
-                    className: "even:bg-slate-100",
+                    className: "even:bg-secondary",
                     children: [
                       R.jsx("td", {
                         onClick: () => ie(`var(--${O})`),
@@ -10837,7 +10831,7 @@ function Qs() {
     children: [
       R.jsxs("header", {
         className:
-          "sticky top-0 pb-8 pt-4 bg-white/90 flex justify-between items-center",
+          "sticky top-0 bg-base pb-8 pt-4 flex justify-between items-center",
         children: [
           R.jsx("a", {
             href: "/ao-design-tokens/",
@@ -10847,7 +10841,7 @@ function Qs() {
             className: "flex gap-6",
             children: [
               R.jsx("span", {
-                className: "text-slate-500",
+                className: "opacity-50",
                 children: "Token Groups",
               }),
               R.jsx("a", {

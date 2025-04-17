@@ -8,6 +8,14 @@
         {
           "destination": "tokens.css",
           "format": "custom/css/theme"
+        },
+        {
+          "destination": "light.css",
+          "format": "custom/css/theme/light"
+        },
+        {
+          "destination": "dark.css",
+          "format": "custom/css/theme/dark"
         }
       ]
     },

@@ -1941,6 +1941,33 @@
     --default-mono-font-variation-settings: var(
       --font-mono--font-variation-settings
     );
+    --color-default: var(--slate-7);
+    --color-base: var(--gray-1);
+    --color-secondary: var(--slate-6);
+    --color-base-subtle: var(--slate-2);
+    --color-disabled: var(--slate-5);
+    --color-component-text-disabled: var(--slate-8);
+    --color-active: var(--slate-4);
+    --color-component-text-default: var(--slate-12);
+    --color-component-text-secondary: var(--slate-11);
+    --color-component-text-tertiary: var(--slate-10);
+    --color-info: var(--cyan-9);
+    --color-success: var(--green-9);
+    --color-warning: var(--amber-9);
+    --color-danger: var(--red-9);
+    --color-link: var(--blue-9);
+    --color-invert: var(--gray-1);
+    --color-tertiary: var(--slate-5);
+    --color-focus: var(--blue-9);
+    --color-component-border-active: var(--blue-9);
+    --color-component-border-disabled: var(--slate-5);
+    --color-placeholder: var(--slate-8);
+    --color-primary: var(--slate-12);
+    --color-component-border-focus: var(--blue-9);
+    --color-component-border-default: var(--slate-7);
+    --color-component-border-secondary: var(--slate-6);
+    --color-component-border-tertiary: var(--slate-5);
+    --color-component-raduis: var(--rounded-md);
   }
 }
 @layer base {
@@ -2433,14 +2460,11 @@
   .rounded-md {
     border-radius: var(--radius-md);
   }
+  .bg-base {
+    background-color: var(--color-base);
+  }
   .bg-black {
     background-color: var(--color-black);
-  }
-  .bg-slate-200 {
-    background-color: var(--color-slate-200);
-  }
-  .bg-white\/90 {
-    background-color: color-mix(in oklab, var(--color-white) 90%, transparent);
   }
   .fill-zinc-900 {
     fill: var(--color-zinc-900);
@@ -2477,11 +2501,11 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
-  .text-slate-500 {
-    color: var(--color-slate-500);
-  }
   .text-white {
     color: var(--color-white);
+  }
+  .opacity-50 {
+    opacity: 0.5;
   }
   .shadow-lg {
     --tw-shadow:
@@ -2530,8 +2554,8 @@
     );
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
-  .even\:bg-slate-100:nth-child(2n) {
-    background-color: var(--color-slate-100);
+  .even\:bg-secondary:nth-child(2n) {
+    background-color: var(--color-secondary);
   }
   @media (hover: hover) {
     .hover\:underline:hover {
@@ -2543,6 +2567,10 @@
       fill: var(--color-zinc-100);
     }
   }
+}
+body {
+  background: var(--base);
+  color: var(--color-component-text-default);
 }
 @keyframes spin {
   to {

@@ -97,6 +97,7 @@ StyleDictionary.registerTransformGroup({
   transforms: ["name-transform", "value-transform"],
 });
 
+// Light + Dark Mode CSS
 StyleDictionary.registerFormat({
   name: "custom/css/theme",
   formatter: function ({ dictionary }) {
@@ -140,6 +141,71 @@ StyleDictionary.registerFormat({
   },
 });
 
+// Light Mode CSS
+StyleDictionary.registerFormat({
+  name: "custom/css/theme/light",
+  formatter: function ({ dictionary }) {
+    const lightColors = `
+      ${dictionary.allTokens
+        .map((token) => {
+          if (token.mode === "light") {
+            return `--${token.name
+              .replace("foundation-", "")
+              .replace("light-", "")}:${token.value};`;
+          }
+        })
+        .join("\n")}
+    `;
+
+    const remaining = `
+      ${dictionary.allTokens
+        .map((token) => {
+          if (token.mode === "mode-1") {
+            return `--${token.name
+              .replace("mode-1-", "")
+              .replace("semantic-", "")}:${token.value};`;
+          }
+        })
+        .join("\n")}
+    `;
+
+    return `:root {${lightColors}${remaining}}`;
+  },
+});
+
+// Dark Mode CSS
+StyleDictionary.registerFormat({
+  name: "custom/css/theme/dark",
+  formatter: function ({ dictionary }) {
+    const darkColors = `
+      ${dictionary.allTokens
+        .map((token) => {
+          if (token.mode === "dark") {
+            return `--${token.name
+              .replace("foundation-", "")
+              .replace("dark-", "")}:${token.value};`;
+          }
+        })
+        .join("\n")}
+    `;
+
+    const remaining = `
+      ${dictionary.allTokens
+        .map((token) => {
+          if (token.mode === "mode-1") {
+            return `--${token.name
+              .replace("mode-1-", "")
+              .replace("semantic-", "")}:${token.value};`;
+          }
+        })
+        .join("\n")}
+    `;
+
+    return `:root {${darkColors}${remaining}}`;
+  },
+});
+
+// JS Format
 StyleDictionary.registerFormat({
   name: "custom/js",
   formatter: function ({ dictionary, file, options }) {

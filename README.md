@@ -19,6 +19,17 @@ In your CSS file, import the token CSS:
 }
 ```
 
+Additional exports are:
+
+```css
+/* Both Light and Dark Modes */
+@import "ao-design-tokens";
+/* Light Mode */
+@import "ao-design-tokens/light";
+/* Dark Mode */
+@import "ao-design-tokens/dark";
+```
+
 This project uses:
 
 - [Radix UI Colors](https://www.radix-ui.com/colors)
